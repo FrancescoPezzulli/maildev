@@ -2,7 +2,7 @@
 FROM node:22-alpine AS base
 RUN apk add --no-cache tzdata
 ENV NODE_ENV=production
-ENV TZ=UTC
+ENV TZ=CET
 
 # Build
 FROM base AS build
